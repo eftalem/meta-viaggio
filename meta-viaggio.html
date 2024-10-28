@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La tua Meta</title>
+</head>
+<body>
+    <h1>Scegli la tua meta per il viaggio!</h1>
+    <form id="travelForm">
+        <label for="destination">Meta:</label>
+        <select id="destination">
+            <option value="Roma">Roma</option>
+            <option value="Venezia">Venezia</option>
+            <option value="Firenze">Firenze</option>
+            <option value="Milano">Milano</option>
+        </select>
+        <button type="button" onclick="submitChoice()">Invia</button>
+    </form>
+    <script>
+        function submitChoice() {
+            var selectedDestination = document.getElementById("destination").value;
+            alert("Hai scelto: " + selectedDestination);
+            // Puoi anche inviare i dati a un server o gestire ulteriormente qui
+        }
+    </script>
+</body>
+</html>
